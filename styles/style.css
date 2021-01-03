@@ -1,0 +1,210 @@
+.shape1 {
+  float: left;
+  shape-outside: polygon(0 0, 0 300px, 200px 300px);
+  -webkit-clip-path: polygon(0 0, 0 300px, 200px 300px);
+          clip-path: polygon(0 0, 0 300px, 200px 300px);
+  background: -webkit-gradient(linear, left top, right top, from(#c6ffdd), to(#67d7f5));
+  background: linear-gradient(to right, #c6ffdd, #67d7f5);
+  height: 300px;
+  width: 300px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.shape2 {
+  float: right;
+  shape-outside: polygon(200px 300px, 300px 300px, 300px 0, 0 0);
+  -webkit-clip-path: polygon(200px 300px, 300px 300px, 300px 0, 0 0);
+          clip-path: polygon(200px 300px, 300px 300px, 300px 0, 0 0);
+  background: -webkit-gradient(linear, left top, right top, from(#67d7f5), to(#f7797d));
+  background: linear-gradient(to right, #67d7f5, #f7797d);
+  height: 300px;
+  width: 300px;
+}
+
+.shape3 {
+  float: left;
+  shape-outside: polygon(0 0, 200px 0, 0 300px);
+  -webkit-clip-path: polygon(0 0, 200px 0, 0 300px);
+          clip-path: polygon(0 0, 200px 0, 0 300px);
+  background: -webkit-gradient(linear, left top, right top, from(#c6ffdd), to(#67d7f5));
+  background: linear-gradient(to right, #c6ffdd, #67d7f5);
+  height: 300px;
+  width: 300px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.shape4 {
+  float: right;
+  shape-outside: polygon(200px 0, 300px 0, 500px 500px, 0 500px);
+  -webkit-clip-path: polygon(200px 0, 300px 0, 500px 500px, 0 500px);
+          clip-path: polygon(200px 0, 300px 0, 500px 500px, 0 500px);
+  background: -webkit-gradient(linear, left top, right top, from(#67d7f5), to(#f7797d));
+  background: linear-gradient(to right, #67d7f5, #f7797d);
+  height: 500px;
+  width: 300px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 900px) {
+  .shape3 {
+    position: absolute;
+    margin-top: 300px;
+    shape-outside: polygon(0 0, 200px 0, 0 300px);
+  }
+  .shape4 {
+    position: relative;
+    margin-left: 60%;
+  }
+  p {
+    display: none;
+  }
+  .X {
+    shape-outside: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+            clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    height: 400px;
+    width: 400px;
+    background: -webkit-gradient(linear, right top, left top, from(#f7797d), to(#67d7f5));
+    background: linear-gradient(to left, #f7797d, #67d7f5);
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .left__pointer {
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    shape-outside: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    height: 100px;
+    width: 100px;
+    background: -webkit-gradient(linear, right top, left top, from(#f7797d), to(#67d7f5));
+    background: linear-gradient(to left, #f7797d, #67d7f5);
+    margin: 0 auto;
+  }
+}
+
+.top__container {
+  width: 100%;
+  height: 100px;
+  background-color: #67d7f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.middle__container {
+  height: 30vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6bd4f1), to(#e73293));
+  background: linear-gradient(#6bd4f1, #e73293);
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picture__after__middle__container {
+  background-image: url(../images/pexels-scott-webb-602137.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crazy__color {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7329e), to(#e83267));
+  background: linear-gradient(to bottom, #e7329e, #e83267);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  color: #fff;
+  -webkit-animation: glow1 1s ease-in-out infinite alternate;
+          animation: glow1 1s ease-in-out infinite alternate;
+  font-family: "Yellowtail", cursive;
+}
+
+@-webkit-keyframes glow1 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f6d1e5, 0 0 20px #f6d1e5, 0 0 25px #f6d1e5, 0 0 30px #f6d1e5, 0 0 35px #f6d1e5;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #72caeb, 0 0 40px #72caeb, 0 0 50px #72caeb, 0 0 60px #72caeb, 0 0 70px #72caeb;
+  }
+}
+
+@keyframes glow1 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f6d1e5, 0 0 20px #f6d1e5, 0 0 25px #f6d1e5, 0 0 30px #f6d1e5, 0 0 35px #f6d1e5;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #72caeb, 0 0 40px #72caeb, 0 0 50px #72caeb, 0 0 60px #72caeb, 0 0 70px #72caeb;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c6ffdd), color-stop(#fbd786), to(#f7797d));
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  color: #3d3d3d;
+  font-family: "Ubuntu", sans-serif;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

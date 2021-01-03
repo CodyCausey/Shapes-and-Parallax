@@ -1,0 +1,52 @@
+.middle__container {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(#6bd4f1, #e73293);
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture__after__middle__container {
+  background-image: url(../images/pexels-scott-webb-602137.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crazy__color {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #e7329e, #e83267);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  color: #fff;
+  animation: glow1 1s ease-in-out infinite alternate;
+  font-family: "Yellowtail", cursive;
+}
+
+@keyframes glow1 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f6d1e5, 0 0 20px #f6d1e5,
+      0 0 25px #f6d1e5, 0 0 30px #f6d1e5, 0 0 35px #f6d1e5;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #72caeb,
+      0 0 40px #72caeb, 0 0 50px #72caeb, 0 0 60px #72caeb, 0 0 70px #72caeb;
+  }
+}
